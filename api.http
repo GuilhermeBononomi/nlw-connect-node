@@ -1,0 +1,28 @@
+POST http://localhost:3000/subscriptions
+Content-Type: application/json
+
+{
+    "name": "user",
+    "email": "user@exemple.com",
+    "referrer": "c31a672c-88df-42a0-967d-470bc636c2df"
+}
+
+###
+
+GET http://localhost:3000/invites/john123
+
+###
+
+GET http://localhost:3000/subscribers/john123/ranking/clicks
+
+###
+
+GET http://localhost:3000/subscribers/john123/ranking/count
+
+###
+
+GET http://localhost:3000/subscribers/john123/ranking/position
+
+###
+
+GET http://localhost:3000/ranking
