@@ -15,6 +15,7 @@ import { getSubscriberInviteClicksRoute } from './routes/get-subscriber-invite-c
 import { getSubscriberInvitesCountRoute } from './routes/get-subscriber-invites-count-route'
 import { getSubscriberRankingPositionRoute } from './routes/get-subscriber-ranking-position-route'
 import { subscribeToEventRoute } from './routes/subscribe-to-event-route'
+import { sendMessageRoute } from './routes/send-message-route'
 
 const app = fastify().withTypeProvider<ZodTypeProvider>()
 
@@ -42,6 +43,7 @@ app.register(getSubscriberInviteClicksRoute)
 app.register(getSubscriberInvitesCountRoute)
 app.register(getSubscriberRankingPositionRoute)
 app.register(getRankingRoute)
+app.register(sendMessageRoute)
 
 app.setSerializerCompiler(serializerCompiler)
 app.setValidatorCompiler(validatorCompiler)
